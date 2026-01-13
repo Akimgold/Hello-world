@@ -10,6 +10,7 @@
       text-align: center;
       background-color: #f0f8ff;
       padding: 20px;
+      margin: 0;
     }
     #myVideo {
       max-width: 100%;
@@ -22,8 +23,8 @@
       color: #d32f2f;
     }
     .email-link {
-      display: block;
-      margin-top: 10px;
+      display: inline-block; /* Лучше, чем block, для начала страницы */
+      margin: 10px 0;
       font-size: 16px;
       color: #1976d2;
       text-decoration: none;
@@ -34,8 +35,8 @@
   </style>
 </head>
 <body>
-  <!-- Ссылка на email в самом начале -->
-  <a href="mailto:akimmargolin01@gmail.com" class="email-link">Напишите мне</a>
+  <!-- Контактная ссылка в начале (допустимо) -->
+  <p><a href="mailto:akimmargolin01@gmail.com" class="email-link">Напишите мне</a></p>
 
   <h1>🎄 Рождественская прогулка 🎄</h1>
 
