@@ -4,84 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мой блог</title>  
-  <style>
-    /* Подключение шрифта */
-    @font-face {
-      font-family: 'Pudilinka';
-      src: url('Pudilinka.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    body {
-      background-color: #e0f7ff; /* Светло-голубой фон */
-      font-family: 'Pudilinka', Arial, sans-serif; /* Используем Пудиленку как основной шрифт */
-      padding: 20px;
-      margin: 0;
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Стили для снежинок */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: -1;
-      background-image: 
-        radial-gradient(circle, white 1px, transparent 1px),
-        radial-gradient(circle, white 1px, transparent 1px),
-        radial-gradient(circle, white 1px, transparent 1px);
-      background-size: 50px 50px, 70px 70px, 90px 90px;
-      background-position: 0 0, 20px 30px, 40px 60px;
-      opacity: 0.6;
-      animation: snowfall 15s linear infinite;
-    }
-
-    @keyframes snowfall {
-      0% {
-        background-position: 
-          0 0, 
-          20px 30px, 
-          40px 60px;
-      }
-      100% {
-        background-position: 
-          0 1000px, 
-          20px 1030px, 
-          40px 1060px;
-      }
-    }
-
-    /* Улучшение читаемости на светлом фоне */
-    h1, h2, p, blockquote, a {
-      color: #003366;
-      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
-    }
-  </style>
-</head>
+  <link rel="stylesheet" href="style.css">
+    </head>
 
 <body>
-  <p>
-    Иконки: 
-    <a target="_blank" href="https://icons8.com/icon/yHeF9urVx2aM/confetti-ball">Новый год</a> иконка от 
-    <a target="_blank" href="https://icons8.com">Icons8</a>
-  </p>
+ 
 
   <h2>19.12.2025</h2>
   <p>
     <img src="https://lila008-9672413.github.io/dem.github.io/Icons/icons8.png" alt="Новый год">
   </p>
-  <p>Поздравление с Наступающим 2026 годом читайте <a href="Congratulations2026.html">здесь</a>.</p>
+  <p class="quote">Поздравление с Наступающим 2026 годом читайте <a href="Congratulations2026.html">здесь</a>.</p>
 
   <h2>06.12.2025</h2>
   <p>Поздравление с Наступающим 2026 годом читайте <a href="Congratulations2026.html">здесь</a>.</p>
@@ -110,5 +43,12 @@
   </p>
 
   <p>Контактная почта: <a href="mailto:akimmargolin01@gmail.com">akimmargolin01@gmail.com</a></p>
+
+
+   <p>
+    Иконки: 
+    <a target="_blank" href="https://icons8.com/icon/yHeF9urVx2aM/confetti-ball">Новый год</a> иконка от 
+    <a target="_blank" href="https://icons8.com">Icons8</a>
+  </p>
 </body>
 </html>
