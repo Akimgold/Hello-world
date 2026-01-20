@@ -1,8 +1,8 @@
 
     /* Подключение шрифта */
     @font-face {
-      font-family: 'Pudilinka';
-      src: url('Pudilinka.ttf') format('truetype');
+      font-family: "Pudilinka";
+      src: url("Fonts/pudilinka.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
