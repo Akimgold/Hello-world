@@ -1,0 +1,63 @@
+
+    /* Подключение шрифта */
+    @font-face {
+      font-family: 'Pudilinka';
+      src: url('Pudilinka.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-color: #e0f7ff; /* Светло-голубой фон */
+      font-family:  Arial, sans-serif; /* Используем Пудиленку как основной шрифт */
+      padding: 20px;
+      margin: 0;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Стили для снежинок */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      background-image: 
+        radial-gradient(circle, white 1px, transparent 1px),
+        radial-gradient(circle, white 1px, transparent 1px),
+        radial-gradient(circle, white 1px, transparent 1px);
+      background-size: 50px 50px, 70px 70px, 90px 90px;
+      background-position: 0 0, 20px 30px, 40px 60px;
+      opacity: 0.6;
+      animation: snowfall 15s linear infinite;
+    }
+
+    @keyframes snowfall {
+      0% {
+        background-position: 
+          0 0, 
+          20px 30px, 
+          40px 60px;
+      }
+      100% {
+        background-position: 
+          0 1000px, 
+          20px 1030px, 
+          40px 1060px;
+      }
+    }
+
+    /* Улучшение читаемости на светлом фоне */
+    h1, h2, p, blockquote, a {
+      color: #003366;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    }
