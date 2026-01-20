@@ -2,7 +2,7 @@
     /* Подключение шрифта */
     @font-face {
       font-family: "Pudilinka";
-      src: url("Fonts/pudilinka.ttf") format("truetype");
+      src: url("Fonts/pudelinka.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
@@ -61,3 +61,4 @@
       color: #003366;
       text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
     }
+p.quote{font-family: "Pudilinka";}
